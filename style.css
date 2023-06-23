@@ -1,5 +1,66 @@
 *{
     margin: 0px;
     padding: 0px;
-    background-color: cadetblue;
+    background-color: black;
+    color: white;
+    
+
+}
+.Title h1{
+    font-family: 'Fruktur', cursive;
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+.Title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+.Parent{
+    display: flex;
+    height: 90vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.Child{
+    border: 2px solid white;
+    height: 70vh;
+}
+.Grid{
+    display: flex;
+    width: 50vw;
+    flex-wrap: wrap;
+}
+.Controls{
+    width: 30%;
+}
+ul li div{
+    width: 40px;
+    height: 40px;
+}
+ul li{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.Heading {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul{
+    height: 70%;
+}
+.Heading h2{
+    font-family: 'Bubblegum Sans', cursive;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+#color-1{
+    background: green;
 }
