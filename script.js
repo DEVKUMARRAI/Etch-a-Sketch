@@ -3,7 +3,9 @@ const colors=document.querySelectorAll('.colors')
 let Selected_color;
 colors.forEach((col)=>{
     col.addEventListener('click',()=>{
-       console.log(col.id)
+       let selected_div=document.querySelector(`#${col.id}`)
+       let computed_style=window.getComputedStyle(selected_div);
+       Selected_color=computed_style.backgroundColor;
     })
     })
 for (let i = 0; i < 60; i++) {
