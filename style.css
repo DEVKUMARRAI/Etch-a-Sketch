@@ -45,7 +45,8 @@ ul li{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    
+    margin: 5px;
+    margin-bottom: 20px;
 }
 .Heading {
     height: 20%;
@@ -54,12 +55,26 @@ ul li{
     align-items: center;
 }
 ul{
-    height: 70%;
+    height: 66%;
 }
 .Heading h2{
     font-family: 'Bubblegum Sans', cursive;
     font-size: 2.5rem;
     font-weight: 500;
+}
+.reset-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    
+}
+#reset{
+    font-size: 1.2rem;
+    font-family: 'Bubblegum Sans',cursive;
+    height: 40px;
+    width: 110px;
+    background-color: red;
 }
 #color-1{
     background-color: green;

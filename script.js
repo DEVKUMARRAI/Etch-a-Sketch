@@ -1,6 +1,8 @@
 const Grid=document.querySelector('.Grid')
 const colors=document.querySelectorAll('.colors')
+const reset_button=document.querySelector('#reset');
 let Selected_color;
+
 colors.forEach((col)=>{
     col.addEventListener('click',()=>{
        let selected_div=document.querySelector(`#${col.id}`)
@@ -10,6 +12,12 @@ colors.forEach((col)=>{
     })
 for (let i = 0; i < 60; i++) {
     const grid = document.createElement('div');
+    reset_button.addEventListener('click',()=>{
+        for (let i = 0; i < 60; i++) {
+            grid.style.background= 'black';
+            Selected_color='black';
+        }
+    })
     grid.style.border = '2px solid white';
     grid.style.height = 'auto';
     grid.style.flex = '1 1 8.33vw';
